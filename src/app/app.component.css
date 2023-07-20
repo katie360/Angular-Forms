@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 15px;
+}
+
+.nav li a {
+    text-decoration: none!important;
+    color: blue;
+    font-size: 25px;
+}
+
+.active a {
+    color: white!important;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}

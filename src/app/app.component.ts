@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mosh';
+
+
+  // courses = [
+  //     {id :1,name:'course1' },
+  //     {id :1,name:'course1' },
+  //     {id :1,name:'course1' },
+  // ]
+
+  // onAdd(){
+  //   this.courses.push({id : 4 , name:'course4'});
+  // }
+  // onRemove(course:any){
+  //  let index = this.courses.indexOf(course);
+  //   this.courses.splice(index,1);
+  // }
 }
