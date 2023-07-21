@@ -18,8 +18,6 @@ app.get('/', function(req, res) {
   res.send('Hello from server');
 });
 
-// Add more routes or middleware as needed...
-
 // Catch-all route (if needed)
 // This route will handle any request that doesn't match the routes defined above
 app.use(function(req, res) {
