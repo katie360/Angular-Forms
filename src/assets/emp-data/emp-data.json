@@ -1,0 +1,30 @@
+[{
+  "name": "John Doe",
+  "age": 30,
+  "position": "Software Engineer",
+  "salary": 70000
+},
+{
+  "name": "Jane Smith",
+  "age": 28,
+  "position": "Graphic Designer",
+  "salary": 50000
+},
+{
+  "name": "Michael Johnson",
+  "age": 35,
+  "position": "Project Manager",
+  "salary": 90000
+},
+{
+  "name": "Emily Brown",
+  "age": 25,
+  "position": "Marketing Specialist",
+  "salary": 55000
+},
+{
+  "name": "Robert Lee",
+  "age": 32,
+  "position": "Sales Executive",
+  "salary": 60000
+}]

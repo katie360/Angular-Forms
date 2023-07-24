@@ -7,21 +7,28 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { EInfoComponent } from './e-info/e-info.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EmpListComponent } from './emp-list/emp-list.component';
+import { EmpDetailComponent } from './emp-detail/emp-detail.component';
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
     EInfoComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    EmpListComponent,
+    EmpDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

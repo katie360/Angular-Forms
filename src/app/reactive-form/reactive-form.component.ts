@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder,Validators} from '@angular/forms';
 import { forbiddenNameValidator } from '../SHARED/user-name.validator';
+import { PasswordValidator } from '../SHARED/password.validator';
 
 @Component({
   selector: 'reactive-form',
@@ -15,7 +16,7 @@ export class ReactiveFormComponent {
       userName : ['Kate',[Validators.required,Validators.minLength(4),forbiddenNameValidator]],
       password : [''],
       confirmPassword : [''],
-  });
+  },{Validator : PasswordValidator});
 
   get userName(){
     return this.registrationForm.get('userName');
