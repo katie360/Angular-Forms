@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { Employee } from '../employee';
+import { Employee } from 'src/assets/emp-data/employee';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'emp-list',
@@ -11,7 +12,7 @@ export class EmpListComponent implements OnInit {
 
   public employees:Employee[]=[];
   public errorMsg :any ;
-  constructor(private dService:DataService){
+  constructor(private dService:DataService , private _router:Router){
 }
 
   ngOnInit(): void {
@@ -19,4 +20,8 @@ export class EmpListComponent implements OnInit {
       .subscribe(data => this.employees = data,
                   error => this.errorMsg = error);
 
-}}
+}
+onSelect(employee:Employee){
+ this._router.navigate(["/details","employee.id"]);
+}
+}

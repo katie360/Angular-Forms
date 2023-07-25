@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee } from '../employee';
+import { Employee } from 'src/assets/emp-data/employee';
 import { DataService } from '../data.service';
 
 @Component({

@@ -1,6 +1,7 @@
 .nav {
     display: flex;
     list-style: none;
+    margin-top: 20px;
 }
 
 .nav li {
@@ -13,7 +14,7 @@
     font-size: 25px;
 }
 
-.active a {
+.active {
     color: white!important;
     background-color: blue;
     padding: 10px;
