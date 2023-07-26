@@ -22,6 +22,6 @@ export class EmpListComponent implements OnInit {
 
 }
 onSelect(employee:Employee){
- this._router.navigate(["/details","employee.id"]);
+ this._router.navigate(["/details",employee.id]);
 }
 }
